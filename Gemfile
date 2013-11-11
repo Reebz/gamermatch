@@ -9,21 +9,25 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'thin'
 
 # rails-bootstrap
+gem 'activerecord-tableless'
 gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'figaro'
+gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form'
-gem 'thin'
+
 group :development do
-	gem 'sqlite3'
+  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
 end
+
 group :production do
 	gem 'pg'
 	gem 'rails_on_heroku'
