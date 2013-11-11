@@ -16,7 +16,6 @@ gem 'figaro'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'thin'
-
 group :development do
 	gem 'sqlite3'
   gem 'better_errors'
