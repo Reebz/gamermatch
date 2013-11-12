@@ -11,7 +11,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'thin'
 
-# rails-bootstrap
+# Rails authentication
+gem 'cancan'
+gem 'devise'
+gem 'rolify'
+
+# rails-bootstrap-project
 gem 'activerecord-tableless'
 gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'figaro'
@@ -26,6 +31,16 @@ group :development do
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
+end
+
+group :test do
+	gem 'rspec-rails'
+	gem 'database_cleaner'
+	gem 'email_spec'
+	gem 'launchy'
+	gem 'cucumber-rails', :require=>false
+	gem 'capybara'
+	gem 'factory_girl_rails'
 end
 
 group :production do
